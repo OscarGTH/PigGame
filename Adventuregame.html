@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<!-- My CSS -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>Harjoitustyö</title>
+</head>
+<body>
+<div id="cont" class = "container-fluid">
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8" id = "TBL"></div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+      <h1> JWT 2018 Harjoitustyö </h1>
+      <br>
+      <div id="namebox"> Name:
+        <p id="namediv"></p>
+      </div>
+      <div id="scorebox"> Score:
+        <p id="scorediv"></p>
+        Weight:
+        <p id="weightdiv"></p>
+        <progress value="5" max="5" id="progressBar"></progress>
+      </div>
+      <button class="btn btn-success" type="button" onClick="move('up')"> Up </button>
+      <button class="btn btn-success" type="button" onClick="move('down')">Down </button>
+      <button class="btn btn-success" type="button" onClick="move('left')">Left </button>
+      <button class="btn btn-success" type="button" onClick="move('right')">Right </button>
+      <p> You can also control the pig with arrow keys. </p>
+      <br>
+      <button class="btn btn-success" type="button" class = "optionbuttons" onClick = "setName();">
+      Set name
+      </button>
+      <button class="btn btn-success" type="button" class = "optionbuttons" onClick="setSize();">
+      Set gameboard size
+      </button>
+      <p id="tablesize"> </p>
+      <details>
+        <summary> Rules </summary>
+        <p> Your main mission is to gather food items to raise your score without bringing your weight over 500kg. Every item also has an effect on your weight, for example burger will make your pig fatter and cherries will make your pig lose some weight. </p>
+        <p> Values: </p>
+        <p> <img  class="values" src="img/cherries.png" alt="cherries"> = Score + 150 & Weight - 20  </p>
+        <p> <img  class="values" src="img/toast.png" alt="toast"> =  Score + 250 & Weight + 20  </p>
+        <p> <img  class="values" src="img/burger.png" alt="burger"> =  Score + 500 & Weight + 30  </p>
+        <p> <img  class="values" src="img/potion.png" alt="potion"> = unable to gain or lose weight for 5 seconds.</p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<!-- My javascript --> 
+<script src="script/mainscript.js"></script>
+</body>
+</html>
